@@ -1,8 +1,8 @@
 # Two-Column
 
-a jupyter notebook extension to allow having two columns of cells side by side.
+A jupyter notebook extension to allow having two columns of cells side by side.
 
-This is very early version.
+This is a very early version.
 
 ![example](example.png)
 
