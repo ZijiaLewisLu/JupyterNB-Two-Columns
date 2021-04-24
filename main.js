@@ -228,6 +228,10 @@ define(["require"], function (require) {
         Jupyter.notebook.metadata.two_column_enabled = true;
     };
 
+    function unmark_notebook(){
+        Jupyter.notebook.metadata.two_column_enabled = true;
+    }
+
     function add_toolbar_buttons(){
         console.log("add button!!!")
 
@@ -255,6 +259,12 @@ define(["require"], function (require) {
             'handler': mark_column_metadata,
         }, 'mark_metadata', 'two-column');
 
+        Jupyter.actions.register({
+            'help'   : 'Turn off Two-column (work after reloading)',
+            'icon'    : 'fa-eraser', 
+            'handler': unmark_notebook,
+        }, 'unmark_notebook', 'two-column');
+
 
         IPython.toolbar.add_buttons_group([
             {
@@ -268,6 +278,9 @@ define(["require"], function (require) {
             },
             {
             'action': 'two-column:mark_metadata'
+            },
+            {
+            'action': 'two-column:unmark_notebook'
             },
         ], 'two-column-buttons');
 
