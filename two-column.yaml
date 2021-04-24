@@ -1,0 +1,5 @@
+Type: Jupyter Notebook Extension
+Compatibility: Jupyter 4.x, 5.x
+Name: Two Column
+Main: main.js
+Description: adds buttons for cell tools (tab, columns, etc)
