@@ -4,7 +4,7 @@ a jupyter notebook extension to allows having two columns of cells side by side.
 
 This is very early version.
 
-![example.png]()
+![example](example.png)
 
 
 ## Todos
